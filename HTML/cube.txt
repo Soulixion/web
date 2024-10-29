@@ -1,0 +1,109 @@
+<div class="cube">
+    <div class="cube-face front">C#</div>
+    <div class="cube-face back">C++</div>
+    <div class="cube-face left">Py</div>
+    <div class="cube-face right">Js</div>
+    <div class="cube-face top">Html</div>
+    <div class="cube-face bottom">Css</div>
+</div>
+
+
+
+.cube-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustez selon vos besoins */
+}
+
+.cube {
+    position: absolute; /* Changez ceci à absolute */
+    right: 20%;
+    top: 75%;
+    transform-style: preserve-3d;
+    transform: translateY(-50%) rotateX(0) rotateY(0); /* Position d'origine */
+    animation: rotateCube 5s infinite linear; /* Animation */
+}
+
+.cube-face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #00444eaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.2); /* Pour voir les faces */
+}
+
+.front {
+    transform: translateZ(75px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(75px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(75px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(75px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(75px);
+}
+
+@keyframes rotateCube {
+    from {
+        transform: translateY(-50%) rotateX(0) rotateY(0); /* Garder la position d'origine */
+    }
+    to {
+        transform: translateY(-50%) rotateX(360deg) rotateY(360deg); /* Rotation */
+    }
+}
+
+
+<div class="page2">
+      <div class="page2texts">
+        <h1 class="page2Title">A propos de moi ...</h1>
+        <p class="page2p" >Je m'apelle OGER Axel, j'ai actuellement 14 ans et j'ai déjà imaginé puis développé plusieurs jeux ainsi que ce site web.
+          <br> <br>
+          J'ai appris à faire cela uniquement grâce au web, avec des vidéos ou des formations textuels.
+          <br> <br>
+          Je m'intérresse aussi dans le domaine de l'impression 3D donc j'ai un bon niveau dans la modélisation 3D de pièces.
+          </p>
+      </div>
+
+      
+
+    </div>
+
+    <div class="page3">
+      <h1 class="div3Title-">Mes principaux domaines ...</h1>
+      <ul class="page3liste">
+        <li >C#</li>
+        <li>Unity</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Modélisation 3D pour STL</li>
+      </ul>
+    </div>
+
+    <div class="page4">
+      <h1 class="div4Title-">Mes autres domaines ...</h1>
+      <ul class="page4liste">
+        <li>Python</li>
+        <li>Blender</li>
+        <li>Arduino</li>
+      </ul>
+    </div>
