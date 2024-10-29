@@ -4,21 +4,6 @@
     padding: 0;
 }
 
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Empêche le défilement horizontal /
-    }
-
-    / Assurez-vous que les conteneurs n'ont pas de marges internes ou de paddings excessifs /
-    .container {
-        padding: 10px; / Ajustez en fonction de vos besoins */
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
 html
 {
     scroll-behavior: smooth;
