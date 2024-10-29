@@ -1,0 +1,480 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #5a7e86;
+}
+
+.header
+{
+    z-index: 1;
+    background-color: #5a7e86;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.header > *
+{
+    color: #ffffff;
+}
+
+#hr
+{
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    top: 76px;
+}
+
+.link-header {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Transition douce */
+}
+
+.link-header:hover {
+    transform: scale(1.2); /* Agrandit le lien sans déplacer les autres */
+}
+
+.title
+{
+    letter-spacing: 9px;
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-right: 20px;
+    text-shadow: #1f353a 3px 0 15px;
+    text-align: center;
+}
+
+.container1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-text-text
+{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 75px;
+}
+
+.img-text-img
+{
+    width: 200px;
+}
+
+.div-title
+{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.div2
+{
+    display: flex;
+    width: 100%;
+    height: 685px;
+    background-color: white;
+    margin-top: -75px;
+}
+
+.div2-left
+{
+    width: 55%;
+    height: 100%;
+    font-size: 35px;
+
+    margin-top: 10px;
+    margin-left: 35px;
+    color: #5a7e86;
+}
+
+.code-img
+{
+    height: 500px;
+    box-shadow: #1f353a 0px 0px 35px 10px;
+}
+
+.div3
+{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    background-color: #5a7e86;
+}
+
+.div3-left
+{
+    line-height: 1.5;
+    width: 70%;
+    height: 100%;
+    font-size: 35px;
+
+    margin-top: 10px;
+    margin-left: 35px;
+    color: white;
+}
+
+.div3-list
+{
+    margin-left: 35px;
+}
+
+.div3-right
+{
+    width: 23%;
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;  
+}
+
+.div4
+{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    background-color: white;
+}
+
+.div4-left
+{
+    line-height: 1.5;
+    width: 70%;
+    height: 100%;
+    font-size: 35px;
+
+    margin-top: 10px;
+    margin-left: 35px;
+    color: #5a7e86;
+}
+
+.div4-list
+{
+    margin-left: 35px;
+}
+
+.div4-right
+{
+    width: 23%;
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;  
+}
+
+.code2-img
+{
+    height: 480px;
+    box-shadow: #1f353a 0px 0px 35px 10px;
+    image-rendering: pixelated;
+}
+
+.div5
+{
+    display: flex;
+    
+    width: 100%;
+    height: 150px;
+    background-color: #5a7e86;
+}
+
+#div5-title
+{
+    width: 33%;
+    margin-top: 30px;
+    margin-left: 35px;
+    color: white;
+}
+
+.div5-container
+{
+    margin-top: 35px;
+    width: 63.5%;
+    height: 55%;
+    float: left;
+    gap: 150px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+}
+
+.div5-img
+{
+    height: 70px;
+}
+
+.div5-icon-text
+{
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.div5-text
+{
+    color: #5a7e86;
+    font-size: 30px;
+}
+
+.footer
+{
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;                  /* Active Flexbox */
+    justify-content: center;        /* Centre horizontalement */
+    align-items: center;            /* Centre verticalement */
+    color: #5a7e86;
+    font-size: 20px;
+}
+
+.cube-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustez selon vos besoins */
+}
+
+.cube {
+    position: absolute; 
+    display: flex;                  
+    justify-content: center;        
+    align-items: center; 
+    right: 20%;
+    top: 105%;
+    transform-style: preserve-3d;
+    transform: translateY(-50%) rotateX(0) rotateY(0); 
+    animation: rotateCube 5s infinite linear; 
+}
+
+.cube-face {
+    position: absolute;
+    width: 300px;                   /* Taille agrandie */
+    height: 300px;                  /* Taille agrandie */
+    border: 3px solid #00444eaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #00444eaf;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.front {
+    transform: translateZ(150px);   /* Position ajustée */
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(150px); 
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(150px); 
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(150px);  
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(150px);   
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);  
+}
+
+@keyframes rotateCube {
+    from {
+        transform: translateY(-50%) rotateX(0) rotateY(0);
+    }
+    to {
+        transform: translateY(-50%) rotateX(360deg) rotateY(360deg); 
+    }
+}
+
+@media screen and (max-width: 1740px)
+{
+    .div5-container
+    {
+        gap: 75px;
+    }
+
+    .div5-container
+    {
+        margin-top: 35px;
+        width: 55%;
+        height: 55%;
+        margin-left: 100px;
+        float: left;
+        gap: 10px;
+    
+        border-radius: 20px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 1475px)
+{
+    .div2
+    {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+        height: 1400px;
+    }
+
+    .div2-right
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center;
+    }
+    
+    .div2-left
+    {
+        margin-top: -600px;
+        width: 70%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+    }
+
+    .cube {
+        right: 50%;
+        top: 180%;
+    }
+
+    .div3
+    {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+        height: 1260px;
+    }
+
+    .div3-right
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+    }
+    
+    .div3-left
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+    }
+
+    .div4
+    {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+        height: 1260px;
+    }
+
+    .div4-right
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+    }
+
+    .div4-left
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center; 
+    }
+
+    .div5
+    {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center;
+        
+        width: 100%;
+        height: 500px;
+        background-color: #5a7e86;
+    }
+    
+    #div5-title
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .div5-container
+    {
+        margin-top: 15px;
+        width: 50%;
+        height: 55%;
+        margin-bottom: 75px;
+        float: left;    
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        align-items: center;
+    }
+}
