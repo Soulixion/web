@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #5a7e86;
+}
+
+.header {
+    z-index: 1;
+    background-color: #5a7e86;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    gap: 3.125rem; /* 50px */
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1875rem; /* 35px */
+    font-family: 'Noto-Sans', sans-serif;
+    padding: 1.25rem; /* 20px */
+}
+
+.header > * {
+    color: #ffffff;
+}
+
+.title {
+    letter-spacing: 0.25rem; /* 4px */
+    color: #ffffff;
+    font-size: 8.4375rem; /* 135px */
+    font-weight: bold;
+    padding-left: 1.25rem; /* 20px */
+    padding-top: 6.875rem; /* 110px */
+    padding-right: 1.25rem; /* 20px */
+    text-shadow: #1f353a 0.1875rem 0 0.9375rem; /* 3px 0 15px */
+    text-align: center;
+}
+
+.title2 {
+    text-align: center;
+    margin-top: 6.25rem; /* 100px */
+    margin-bottom: 3.125rem; /* 50px */
+    color: #ffffff;
+    font-size: 4.6875rem; /* 75px */
+}
+
+#hr {
+    width: 100%;
+    position: absolute;
+    height: 0.125rem; /* 2px */
+    background-color: #ffffff;
+    top: 4.75rem; /* 76px */
+}
+
+.link-header {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.link-header:hover {
+    transform: scale(1.2);
+}
+
+.games-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 53.125rem; /* 850px */
+    background-color: white;
+}
+
+.game-panel {
+    background-color: #5a7e86;
+    height: 43.75rem; /* 700px */
+    width: 34.375rem; /* 550px */
+    border-radius: 3.125rem; /* 50px */
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-panel-left,
+.game-panel-right {
+    height: 100%;
+    width: 45%;
+    border-radius: 3.125rem; /* 50px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel-up {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem; /* 30px */
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.panel-down {
+    width: 85%;
+    height: 75%;
+}
+
+.game-logo {
+    height: 8.125rem; /* 130px */
+    image-rendering: pixelated;
+}
+
+.game-title {
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-size: 2.9375rem; /* 47px */
+}
+
+.game-summary {
+    width: 90%;
+    height: 19.6875rem; /* 315px */
+    padding: 1.5625rem; /* 25px */
+    text-align: center;
+    color: white;
+    font-size: 1.875rem; /* 30px */
+    line-height: 1.1;
+    border: 0.125rem solid white; /* 2px */
+    border-radius: 3.125rem; /* 50px */
+}
+
+.info-button {
+    width: 100%;
+    height: 26%;
+    gap: 3.125rem; /* 50px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.game-platform {
+    color: white;
+    text-align: center;
+    font-size: 1.5625rem; /* 25px */
+    font-style: italic;
+}
+
+.game-download {
+    margin-top: 1.875rem; /* 30px */
+    margin-bottom: 1.875rem; /* 30px */
+    width: 55%;
+    height: 5rem; /* 80px */
+    border-radius: 3.125rem; /* 50px */
+    color: #5a7e86;
+    font-size: 1.875rem; /* 30px */
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+
+.normal-text,
+.hover-text {
+    position: absolute;
+    transition: opacity 0.4s ease;
+}
+
+.hover-text {
+    opacity: 0;
+}
+
+.game-download:hover .normal-text {
+    opacity: 0;
+}
+
+.game-download:hover .hover-text {
+    opacity: 1;
+}
+
+.carousel {
+    height: 27.5rem; /* 440px */
+    width: 48.8125rem; /* 781px */
+    box-shadow: #1f353a 0px 0px 2.1875rem 0.625rem; /* 35px 10px */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-images img.active {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #5a7e86;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    padding: 0.625rem; /* 10px */
+    font-size: 1.125rem; /* 18px */
+}
+
+.prev {
+    left: 0.625rem; /* 10px */
+}
+
+.next {
+    right: 0.625rem; /* 10px */
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 0.625rem; /* 10px */
+    position: absolute;
+    bottom: 0.625rem; /* 10px */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator {
+    display: inline-block;
+    width: 0.625rem; /* 10px */
+    height: 0.625rem; /* 10px */
+    margin: 0 0.3125rem; /* 5px */
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #5a7e86;
+}
+
+/* Convertissez également les valeurs spécifiques de #carousel et autres éléments personnalisés de la même manière */
