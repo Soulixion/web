@@ -490,12 +490,3 @@ body
         align-items: center;
     }
 }
-
-@media screen and (max-width: 1000px)
-{
-    .title
-    {
-        letter-spacing: 3px;
-        font-size: 10px;
-    }
-}
