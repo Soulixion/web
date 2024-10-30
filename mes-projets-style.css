@@ -399,6 +399,15 @@ button {
     font-size: 20px;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .title
+    {
+        letter-spacing: 3px;
+        font-size: 50px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .game_container {
         flex-direction: column;
