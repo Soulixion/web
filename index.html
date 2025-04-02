@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mes Projets</title>
+  <link rel="icon" href="Img/PDPRond.png" type="image/x-icon">
+  <link rel="stylesheet" href="mes-projets-style.css">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Désactive tous les boutons et liens
+      const buttons = document.querySelectorAll("button, a");
+      buttons.forEach(btn => btn.style.pointerEvents = "none");
+
+      // Réactive après 0.5 seconde
+      setTimeout(() => {
+          buttons.forEach(btn => btn.style.pointerEvents = "auto");
+      }, 500);
+  });
+
+  setTimeout(() => {
+    document.body.style.opacity = "0.99"; // Changement mineur
+    setTimeout(() => {
+      document.body.style.opacity = ""; // Remet comme avant
+    }, 50); // Petite pause avant de revenir à la normale
+  }, 700); // Après 1 seconde
+</script>
+
+<body>
+  <header class="header">
+
+    <a href="portfolio.html#title" class="link-header">Portfolio</a>
+    <a>|</a>
+    <a href="index.html" class="link-header">Mes projets</a>
+    <a>|</a>
+    <a href="portfolio.html#contactez" class="link-header">Contactez-moi</a>
+    <a>|</a>
+    <a href="https://www.youtube.com/@Soulixion" class="link-header">Youtube</a>
+    <meta name="viewport" content="width=1024">
+    <hr id="hr">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Prociono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </header>
+
+  <h1 class="title animate__animated animate__bounceInDown" id="title">MES PROJETS</h1>
+
+  <nav>
+    <h2 class="title2 animate__animated animate__fadeIn">100% de ma main !</h2>
+
+    <div class="games-containers">
+
+      <div class="game_container">
+        <div class="game-panel-left animate__animated animate__bounceInLeft">
+          <div class="game-panel">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon1.png" alt="Game Logo">
+              <h1 class="game-title">How To<br>Become Crazy</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary">"How to Become Crazy" est le meilleur de mes jeux. Préparez-vous à galérer, car
+                chaque dégât est fatal ! Votre objectif est de libérer votre ami au bout d'un long chemin semé
+                d'épreuves et de monstres hostiles ! Seuls les plus courageux parviendront à finir le voyage.</p>
+              <div class="info-button">
+                <p class="game-platform">- PC</p>
+                <a href="https://soulixion.itch.io/howtobecomecrazy" class="game-download">
+                  <span class="normal-text">Télécharger</span>
+                  <span class="hover-text">108 Mo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-right">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="Img/Screenshot1/Screenshot1.png" alt="Image 1" class="active">
+              <img src="Img/Screenshot1/Screenshot2.png" alt="Image 2">
+              <img src="Img/Screenshot1/Screenshot3.png" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container" id="game-container2">
+        <div class="game-panel-right">
+
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="Img/Screenshot7/Screenshot1.png" alt="Image 1" class="active">
+              <img src="Img/Screenshot7/Screenshot2.png" alt="Image 2">
+              <img src="Img/Screenshot7/Screenshot3.png" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-left animate__animated animate__bounceInRight">
+          <div class="game-panel" id="game-panel2">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon7.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-mentalmathmaven">Dot Vs Dot</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary" id="game-summary2">"Dot Vs Dot" est un jeu multijoueur dans lequel vous pouvez défier vos
+                amis dans des duels pour déterminer qui est le meilleur ! Le premier joueur à éliminer son adversaire un nombre
+                prédéfini de fois remporte la partie. Divers modificateurs sont disponibles pour pimenter les affrontements !</p>
+              <div class="info-button">
+                <p class="game-platform" id="game-platform2">- PC</p>
+                <a href="https://soulixion.itch.io/dotvsdot" class="game-download" id="game-download2">
+                  <span class="normal-text" id="download-text2">Télécharger</span>
+                  <span class="hover-text" id="download-text2-2">117 Mo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container" id="game-container">
+        <div class="game-panel-left animate__animated animate__bounceInLeft">
+          <div class="game-panel" id="game-panel">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon2.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-warnne">Warnne</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary">"Warnne" est un jeu 3D à la première personne qui m'a pris le
+                plus de temps à développer. Bien que les graphismes soient très basiques, le jeu propose une histoire
+                captivante et un gameplay de qualité. Vous devrez récupérer trois artefacts pour vaincre la créature qui
+                menace votre monde !</p>
+              <div class="info-button">
+                <p class="game-platform">- PC</p>
+                <a href="https://soulixion.itch.io/warnne" class="game-download">
+                  <span class="normal-text">Télécharger</span>
+                  <span class="hover-text">1,14 Go</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-right">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="Img/Screenshot2/Screenshot1.png" alt="Image 1" class="active">
+              <img src="Img/Screenshot2/Screenshot2.png" alt="Image 2">
+              <img src="Img/Screenshot2/Screenshot3.png" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container" id="game-container2">
+        <div class="game-panel-right">
+          <div class="carousel" id="carousel3">
+            <div class="carousel-images" id="carousel-images3">
+              <img src="Img/Screenshot3/Screenshot1.jpg" alt="Image 1" class="active">
+              <img src="Img/Screenshot3/Screenshot2.jpg" alt="Image 2">
+              <img src="Img/Screenshot3/Screenshot3.jpg" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-left animate__animated animate__bounceInRight">
+          <div class="game-panel" id="game-panel2">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon3.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-onlydot">Only Dot</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary" id="game-summary2">"OnlyDot" est un mini-jeu au concept simple mais au design visuellement
+                éblouissant ! L'objectif est de suivre un parcours en déplaçant votre point à l'aide des boutons
+                affichés à l'écran. Des skins et des thèmes seront débloqués en atteignant certains scores.</p>
+              <div class="info-button">
+                <p class="game-platform" id="game-platform2">- PC <Br>- Mobile</p>
+                <a href="https://soulixion.itch.io/onlydot" class="game-download" id="game-download2">
+                  <span class="normal-text" id="download-text2">Télécharger</span>
+                  <span class="hover-text" id="download-text2-2">21 Ko</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container" id="game-container">
+        <div class="game-panel-left animate__animated animate__bounceInLeft">
+          <div class="game-panel" id="game-panel">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon4.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-dodgeinspace">Dodge In <br>Space</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary">"Dodge In Space" est un jeu simple où vous pilotez une fusée.
+                Votre objectif est d’éviter les différents astéroïdes qui surgissent dans chaque directions. En chemin,
+                vous pourrez ramasser des bonus, tels que des accélérateurs, des réductions de taille ou encore des
+                dispositifs à rayon laser.</p>
+              <div class="info-button">
+                <p class="game-platform">- PC <Br>- Mobile</p>
+                <a href="https://soulixion.itch.io/dodgeinspace" class="game-download">
+                  <span class="normal-text">Télécharger</span>
+                  <span class="hover-text">24 Ko</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-right">
+          <div class="carousel">
+            <div class="carousel-images" id="carousel-images4">
+              <img src="Img/Screenshot4/Screenshot1.jpg" alt="Image 1" class="active">
+              <img src="Img/Screenshot4/Screenshot2.jpg" alt="Image 2">
+              <img src="Img/Screenshot4/Screenshot3.jpg" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container" id="game-container2">
+        <div class="game-panel-right">
+
+          <div class="carousel" id="carousel6">
+            <div class="carousel-images">
+              <img src="Img/Screenshot6/Screenshot1.jpg" alt="Image 1" class="active">
+              <img src="Img/Screenshot6/Screenshot2.jpg" alt="Image 2">
+              <img src="Img/Screenshot6/Screenshot3.jpg" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-left animate__animated animate__bounceInRight">
+          <div class="game-panel" id="game-panel2">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon6.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-mentalmathmaven">Mental<br>Math Maven</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary" id="game-summary2">"Mental Math Maven" est une application de calcul mental qui
+                permet de s'entrainer avec des calcul plus ou moins simple en fonction de la difficulté choisie. Divers
+                types de calculs sont disponibles ainsi qu'une interface inspirée de jeux vidéo, rendant l'apprentissage
+                plus amusant.</p>
+              <div class="info-button">
+                <p class="game-platform" id="game-platform2">- PC <Br>- Mobile</p>
+                <a href="https://soulixion.itch.io/mentalmathmaven" class="game-download" id="game-download2">
+                  <span class="normal-text" id="download-text2">Télécharger</span>
+                  <span class="hover-text" id="download-text2-2">22 Ko</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game_container">
+        <div class="game-panel-left animate__animated animate__bounceInLeft">
+          <div class="game-panel">
+            <div class="panel-up">
+              <img class="game-logo" src="Img/Icon5.png" alt="Game Logo">
+              <h1 class="game-title" id="game-title-lazerscolors">Lazers Colors</h1>
+            </div>
+            <div class="panel-down">
+              <p class="game-summary">"Lazers Colors" est un mini-jeu avec une ambiance néon, où des lasers de
+                differentes couleurs défilent. Votre objectif est de correspondre à la couleur du laser en mouvement en
+                utilisant des boutons sur votre écran. Plusieurs niveaux de difficulté sont disponibles.</p>
+              <div class="info-button">
+                <p class="game-platform">- PC <Br>- Mobile</p>
+                <a href="https://soulixion.itch.io/lazerscolors" class="game-download">
+                  <span class="normal-text">Télécharger</span>
+                  <span class="hover-text">24 Ko</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-panel-right">
+          <div class="carousel">
+            <div class="carousel-images" id="carousel-images5">
+              <img src="Img/Screenshot5/Screenshot1.png" alt="Image 1" class="active">
+              <img src="Img/Screenshot5/Screenshot2.png" alt="Image 2">
+              <img src="Img/Screenshot5/Screenshot3.png" alt="Image 3">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+              <span class="indicator" onclick="showSlide(0)"></span>
+              <span class="indicator" onclick="showSlide(1)"></span>
+              <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    <p>© Copyright 2025 Soulixion. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
